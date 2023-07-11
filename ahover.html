@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @font-face {
+    font-family: 'intelone-mono-font-family-regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/intelone-mono-font-family-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    }
+    body{ 
+        margin: 0; padding: 0; 
+        /* reset있으면 안해도됨 */
+        font-family: 'intelone-mono-font-family-regular'; }
+    div{
+        width:100vw; 
+        /* 화면너비만큼 */
+        height:100vh;
+        /* 화면높이만큼 */
+        background-color: black;
+        display: flex;
+        flex-direction: column; 
+        /* flex방향은 세로다 */
+        justify-content: center;
+        /* 자식태그의 위치는 세로축가운데 */
+        align-items: center;
+        /* 세로축을 호출하였기때문에 align이 가로축역활함 */
+    }
+    div a{
+        color:white;
+        text-decoration: none;
+        border:3px solid white;
+        padding: 1rem;
+        border-radius: 3rem;
+        /* 1rem 매체따라서 설정된 기본폰트사이즈 */
+        text-transform: uppercase;
+        /* 대문자로 */    
+        transition: 0.5s; 
+        /* 변화생기면 0.5초에 동안에 처리해라 -> 애니메이션 */
+    }
+    div a:hover{
+        /* a태그에 마우스가 올라가면 배경색이 화이트로 글자색이 블랙으로처리 */
+        background-color: white;
+        color:black
+    }
+    </style>
+</head>
+<body>
+    <div><a href="">click</a></div>
+</body>
+</html>

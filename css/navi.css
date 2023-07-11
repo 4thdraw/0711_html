@@ -1,3 +1,54 @@
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    /* 기본폰트를 잡아준다. 유전받기때문에 최상위 태그 body  선언하기 */
+    font-weight: 400;
+    /* 반드시 두께정의가 있는 폰트는 해줘야한다. 
+       안그러면 브라우저마다 다르게 출력된다. */
+}
+a{
+    /* 반드시 폰트색상과  언더라인은 a태그에 지정해줘야한다. 유전받지않음 */
+    color:#222;
+    text-decoration: none;
+}
+a:hover{
+    /* a태그의 마우스가 올라갔을때 스타일지정하기 */
+    color:red;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:30px 50px;
+    border-bottom:1px solid black;
+}
+.gnb, .util{
+    display: flex;
+}
+
+.util li{
+    padding: 0 5px;
+    font-size: 0.9rem;
+}
+.util li i{
+    color:transparent
+    
+}
+.util li:hover i{
+    color:black;
+   
+}
+.gnb li{
+    margin: 0 10px;
+    padding:15px;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+}
+.gnb li:hover{
+    background-color: black;    
+    transition: 0.5s;
+}
+.gnb li:hover a{
+    color:white
 }
